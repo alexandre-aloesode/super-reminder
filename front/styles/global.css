@@ -1,0 +1,364 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e79bf;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  font-size: 90%;
+  font-style: italic;
+  color: rgb(72, 71, 71);
+  justify-content: center;
+}
+
+h2 {
+  font-size: 130%;
+  font-weight: bold;
+  /* color: rgb(72, 71, 71); */
+  justify-content: center;
+  color:#155C92;
+}
+
+h3 {
+  align-self: flex-start;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 90%;
+  color:#155C92;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-top: 5px;
+  background-color: #155C92;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+#logoDiv {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 200%;
+  align-self: flex-start;
+  margin-left: 8%;
+}
+#logo {
+  width: 100%;
+  height: 100%;
+}
+
+nav form {
+  margin-right: 8%;
+}
+
+nav form button {
+  text-decoration: none;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
+}
+nav form button:hover {
+  cursor: pointer;
+}
+
+.authForm {
+  width: 20vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.authForm input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: solid 1px black;
+  background-color: transparent;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
+}
+
+.authForm input:focus {
+  outline: none;
+}
+
+.authButton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: solid 1px black;
+  background-color: #1e79bf;
+  border-radius: 8px;
+  color: #fff;
+  transition: 2s;
+}
+
+#toDoListDiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mainButtons {
+  cursor: pointer;
+  background-color: #155C92;
+  font-size: 100%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.mainButtons:hover {
+  /* background-color: #1e79bf; */
+  scale: 1.1;
+  transition: 1s;
+}
+
+#toDoListTasksDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tasksDiv {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding-top: 10px;
+  align-items: center;
+  background-color: #f1f2f4;
+}
+
+.taskTitleDiv {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* #toDoDiv {
+  border-right: solid 1px black;
+} */
+
+#addTaskIcon {
+  font-size: 150%;
+  margin-left: 10%;
+  justify-self: flex-end;
+  color:#155C92;
+}
+
+#addTaskIcon:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+/* 
+#currentDiv {
+  border-right: solid 1px black;
+} */
+
+.singleTaskDiv {
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 8px;
+  position: relative;
+  /* background-color: #F1F2F4 */
+  background-color: #fff;
+  padding-top:0px;
+  padding-left: 10px;
+}
+
+.singleTaskDiv:hover {
+  cursor: pointer;
+  /* transform: scale(1.1);
+  transition: 0.5s; */
+  background-color: #b3d3fe;
+  transition: 1s;
+}
+
+.singleTaskDiv i {
+  font-size: 120%;
+  color:#155C92;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+}
+
+.singleTaskDiv i:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.singleTaskDetailsDiv {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: white; */
+  border-radius: 8px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.singleTaskDetailsDiv p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 10px;
+}
+
+.singleTaskDetailsDiv i {
+  font-size: 120%;
+  color:#155C92;
+  position: initial;
+}
+
+.dropzone {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#addTaskDiv {
+  width: 40vw;
+  height: 40vh;
+  background-color: #f1f2f4;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  border-radius: 16px;
+  padding-top: 5%;
+  z-index: -1;
+  display: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#closeAddTaskDivBtn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 150%;
+  color:#155C92;
+}
+
+#closeAddTaskDivBtn:hover {
+  cursor: pointer;
+  color: red;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+#addTaskForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#showTaskDiv {
+  width: 60vw;
+  height: 60vh;
+  background-color: #f1f1f4;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  padding: 5%;
+  z-index: -1;
+  display: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+#ShowTaskDetailsDiv {
+  display: flex;
+  width: 100%;
+}
+
+#showTaskDescriptionDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: solid 1px black;
+}
+
+#showTaskSubClassDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#closeTaskDivBtn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 150%;
+  color:#155C92;
+}
+
+#closeTaskDivBtn:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: 0.5s;
+  color:red;
+}
+
+.singleSubTaskDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: space-around; */
+}
